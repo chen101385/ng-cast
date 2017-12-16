@@ -7,10 +7,17 @@ angular.module('video-player')
   controller: function() {
     this.videos = window.exampleVideoData;
     this.currentVideo = window.exampleVideoData[0];
-    this.selectVideo = function() {};
-    this.searchResults = function() {};
-    this.onVideoListClick = function() {};
-    this.onKeyPress = function() {};
+    this.selectVideo = (video) => {
+      this.currentVideo = video;
+    };
+    this.searchResults = function(query) {
+      //call search method using query
+        //get data back
+          // //update videos & current video
+          // console.log(query);
+          
+      
+    };
   },
         //search method
       //type text into search bar

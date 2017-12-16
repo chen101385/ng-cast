@@ -1,12 +1,12 @@
-angular.module('video-player')
+// angular.module('video-player')
 
-.service('youTube', function($http) {
-  // $http({
-  //   method: 'GET',
-  //   url: 'src/data/exampleVideoData.js'
-  // }).then(function successCallback(response) {
-  //   console.log('success');
-  // }, function errorCallback(response) {
-  //   console.log('failure');
-  // });
-});
+// .service('youTube', function($http) {
+//   $http({
+//     method: 'GET',
+//     url: 'src/data/exampleVideoData.js'
+//   }).then(function successCallback(response) {
+//     console.log('success');
+//   }, function errorCallback(response) {
+//     console.log('failure');
+//   });
+// });

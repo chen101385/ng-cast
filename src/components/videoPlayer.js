@@ -4,7 +4,6 @@ angular.module('video-player')
     video: '<'
   },
   controller: function() {
-    // this.main = 'https://www.youtube.com/embed/';
     this.url = (video) => `https://www.youtube.com/embed/${video.id.videoId}`;
   },
   templateUrl: 'src/templates/videoPlayer.html'

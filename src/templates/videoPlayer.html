@@ -1,11 +1,6 @@
 <div class="video-player">
   <div class="embed-responsive embed-responsive-16by9" ng-if="$ctrl.video">
     <iframe class="embed-responsive-item" ng-src="{{$ctrl.url($ctrl.video)}}" allowFullScreen></iframe>
-    <!-- <iframe class="embed-responsive-item" ng-src="'https://www.youtube.com/embed/' + $ctrl.player.id.videoId" allowFullScreen></iframe> -->
-    <!-- <iframe class="embed-responsive-item" ng-src="https://www.youtube.com/embed/{{ $ctrl.player.id.videoId }}" allowFullScreen></iframe> -->
-    <!-- <iframe class="embed-responsive-item" ng-src={{ 'https://www.youtube.com/embed/' + $ctrl.player.id.videoId }} allowFullScreen></iframe> -->
-    <!-- <iframe class="embed-responsive-item" ng-src="{{ 'https://www.youtube.com/embed/' + $ctrl.player.id.videoId }}" allowFullScreen></iframe> -->
-    <!-- <iframe class="embed-responsive-item" ng-src="{{ 'https://www.youtube.com/embed/' + $ctrl.player.id.videoId }}" allowFullScreen></iframe> -->
   </div>
   <div class="video-player-details">
     <h3>{{$ctrl.video.snippet.title}}</h3>
