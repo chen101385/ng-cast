@@ -11,6 +11,7 @@ angular.module('video-player')
       this.currentVideo = video;
     };
     this.searchResults = function(query) {
+      
       //call search method using query
         //get data back
           // //update videos & current video

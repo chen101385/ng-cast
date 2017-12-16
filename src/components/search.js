@@ -8,6 +8,9 @@ angular.module('video-player')
   },
   controller: function() {
     this.content = '';
+    this.clearResults = function() {
+      this.content = '';
+    };
     /*
     trying to clear query after search
     */
