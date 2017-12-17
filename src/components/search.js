@@ -7,7 +7,10 @@ angular.module('video-player')
   },
   controller: function() {
     this.content = '';
-    this.processResults = function() {
+    this.change = function() {
+      this.searchResults(this.content);
+    };
+    this.result = function() {
       this.searchResults(this.content);
       this.content = '';
     };

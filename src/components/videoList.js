@@ -4,6 +4,11 @@ angular.module('video-player')
     videos: '<',
     selectVideo: '<'
   },
+  controller: function() {
+    this.onClick = function() {
+      this.selectVideo(this.item);
+    };   
+  },
   templateUrl: 'src/templates/videoList.html'
 });
 

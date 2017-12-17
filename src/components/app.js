@@ -1,6 +1,6 @@
 angular.module('video-player')
 .component('app', {
-  controller: function(youTube) {
+  controller: function($window, youTube) {
     this.videos = window.exampleVideoData;
     this.currentVideo = window.exampleVideoData[0];
     this.selectVideo = (video) => {
@@ -8,10 +8,13 @@ angular.module('video-player')
     };
     this.searchResults = (query) => {
       youTube.search(query, (data) => {
-        this.currentVideo = data[0];
-        this.videos = data;
+        if (data) {
+          this.currentVideo = data[0];
+          this.videos = data;  
+        }
       });
     };
+    this.searchResults('cats');
   },
   templateUrl: 'src/templates/app.html'
 });
